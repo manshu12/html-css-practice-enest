@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3C container</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="w3.css"/>
+</head>
+<body>
+	<div class="w3-container w3-teal">
+		<h1>Hello World!</h1>
+		<hr/>
+	</div>
+	<img src="Irkutsk_and_Lake_Baikal.jpg" alt="Irkutsk_and_Lake_Baikal" style="width: 100%;"/>
+	<div>
+		<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem.</p>
+	</div>
+	<div class="w3-container w3-teal">
+		<h3>My Footer</3>
+			<hr/>
+			<p>Everything you need to know about the footer.</p>
+	</div>
+	<button class="w3-btn w3-red" onclick="document.getElementById('panel').style.display='block'">Show panel</button>
+	<div id="panel" class="w3-panel w3-purple w3-display-container" style="display: none;">
+		<span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-display-topright">x</span>
+		<p>Hello World</p>
+		<p>Hello World Again</p>
+
+	</div>
+</body>
+</html>

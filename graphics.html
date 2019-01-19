@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>svg</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+	
+	<p>this module will display the lattitude and alltitute of the user
+ <button id="myButton" onclick="getPosition();">Try this</button></p>
+ <p id="location"></p>
+ <script type="text/javascript">
+ 	var loc=document.getElementById("location");
+   function getPosition() {
+   	 if(navigator.geolocation)
+   	 {
+   	 	navigator.geolocation.getCurrentPosition(showPosition);
+   	 }
+   	 else
+   	 {
+   	 	loc.innerHTML ="your Browser doesn't support geolocation";
+   	 }
+   	 function showPosition(position)
+   	{
+   		loc.innerHTML="latitude:"+position.coords.latitude +"<br> Altitude:"+position.coords.longitude;
+   	}
+   }
+ </script>
+</body>
+</html>

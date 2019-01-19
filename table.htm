@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working with HTML table</title>
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<style>
+		html
+		{
+			font-family: sans-serif;
+		}
+		table
+		{
+			width: 100%;
+			border: 2px solid gray;
+			border-collapse: collapse;
+			text-align: left;
+		}
+		tr,th,td
+		{
+			border: 1px solid gray;
+			border-collapse: collapse;
+
+		}
+		ul
+		{
+			list-style-type:none;
+			margin: 10px;
+			padding: 10px;
+			overflow:hidden;
+			background-color: #000000;
+		}
+		li
+		{
+			float: left;
+		}
+		li a
+
+		{
+			display: block;
+			text-align: center;
+			color: white;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover
+		{
+			background-color: #888888;
+		}
+	</style>
+<body>
+	<ul>
+		<li><a href="#Home">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Products</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	<table cellpadding="10px">
+		<caption>Personal Information</caption>
+		<colgroup>
+			<col style="background-color: #ffaa12">
+			<col style="background-color: yellow">
+			<col style="background-color: #ff1234">
+			<col style="background-color: lightblue">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>SrNo.</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>MobNo.</th>
+			</tr>
+		</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>Himanshu</td>
+				<td>Thakur</td>
+				<td>1234567890</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Aashu</td>
+				<td>Sharma</td>
+				<td>7654322344</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Dhaasu</td>
+				<td>Kumar</td>
+				<td>34567865432</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>KalaKar</td>
+				<td>&nbsp</td>
+				<td>787665433</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Jatin</td>
+				<td>Arora</td>
+				<td>9876543345</td>
+			</tr>
+			</tbody>		
+	</table>
+	
+	</dl>
+</body>
+</html>

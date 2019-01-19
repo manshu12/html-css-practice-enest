@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Position: sticky</title>
+    <style type="text/css">
+    	.container
+    	 { 
+  position: relative;
+  background: lightgray;
+  width: 70%;
+  margin: 0 auto;
+  height: 2000px;
+}
+
+.container p 
+{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Comic Sans MS;
+}
+
+.box-orange
+ {
+  background: orange;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom : 5px;
+  margin-left: 40px;
+}
+
+.box-blue 
+{
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+}
+
+.sticky {
+  position: sticky;
+  background: red;
+  top: 0;
+  padding: 10px;
+  color: white;
+}
+
+    </style>
+    </head>
+
+  <body>
+    <div class="container">
+          <div class="box-orange"></div>
+          <div class="box-blue"></div>
+      <p>Scroll down the page</p>
+      <p class="sticky">I am sticky</p>
+      </div>
+  </body>
+</html>

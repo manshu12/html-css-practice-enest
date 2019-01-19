@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		* {box-sizing: border-box;}
+		body {margin: 0;}
+		.header
+		{
+			text-align: center;
+			padding: 20px;
+			background-color: #f1f1f1;
+		}
+		.topnav
+		{
+			width: 100%;
+			background-color: black;
+			overflow: hidden;
+
+		}
+		.topnav a
+		{
+			color: white;
+			display: block;
+			float: left;
+			padding: 16px;
+			text-decoration: none;
+		}
+		.topnav a:hover
+		{
+			background-color: red;
+			color: white;
+		}
+		.column1, .column3
+		{
+			width: 20%;
+			float: left;;
+			padding: 16px;
+			text-align: justify;
+			background-color: #f1f1f1;
+		}
+		.column2
+		{
+			width: 60%;
+			float: left;;
+			padding: 16px;
+			text-align: justify;
+		}
+		.column1 .head, .column2 .head, .column3 .head 
+		{
+			text-align: center;
+		}
+		/*.column3
+		{
+			width: 20%;
+			float: left;;
+			padding: 16px;
+			text-align: justify;
+			background-color: #f1f1f1;
+		}*/
+		.row::after
+		{
+			content: " ";
+			display: table;
+			clear: both;
+		}
+		@media screen and (max-width: 500px)
+		{
+			.column1, .column2, .column3
+			{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+   <div class="header">
+   	<h1>Header</h1>
+   	<p>This is the header of the website you are creating.</p>
+   </div>
+   <div class="topnav">
+   	<a href="#">Home</a>
+   	<a href="#">About</a>
+   	<a href="#">News</a>
+   	<a href="#">Contact</a>
+   	<a href="#">Option</a>
+   </div>
+   <div class="row">
+   	<div class="column1">
+   		 <h2 class="head">Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+   	</div>
+   	<div class="column2">
+   		 <h2 class="head">Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+   	</div>
+   	<div class="column3">
+   		 <h2 class="head">Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+   	</div>
+   </div>
+</body>
+</html>

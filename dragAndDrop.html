@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>local storage</title>
+</head>
+<body>
+	<button id="button" onclick="clickCounter()">click me</button>
+	<div id="result"></div>
+	<script type="text/javascript">
+		function clickCounter()
+		{
+		if (typeof(Storage) !== "undefined")
+		 {
+		 	if(sessionStorage.clickcount){
+		 		sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+		 	}
+		 	else
+		 	{
+		 		sessionStorage.clickcount=1;
+		 	}
+		 	document.getElementById("result").innerHTML="you have clicked the button" + sessionStorage.clickcount + "time(s) in this session.";
+		 }
+		 else
+		 {
+		 	document.getElementById("result").innerHTMML="sorry";
+		 }
+		}	 
+	</script>
+</body>
+</html>
